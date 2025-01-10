@@ -1,6 +1,6 @@
 [
-  { "word": "你好", "pinyin": "nǐ hǎo", "meaning": "Hello" },
-  { "word": "谢谢", "pinyin": "xiè xie", "meaning": "Thank you" },
-  { "word": "再见", "pinyin": "zài jiàn", "meaning": "Goodbye" },
-  { "word": "对不起", "pinyin": "duì bù qǐ", "meaning": "Sorry" }
+  { "word": "你好", "pinyin": "n&#462; h&#462;o", "meaning": "Hello", "audio": "audio/nihao.mp3" },
+  { "word": "谢谢", "pinyin": "xi&#232; xi&#232;", "meaning": "Thank you", "audio": "audio/xiexie.mp3" },
+  { "word": "再见", "pinyin": "z&#224;i ji&#224;n", "meaning": "Goodbye", "audio": "audio/zaijian.mp3" },
+  { "word": "对不起", "pinyin": "du&#236; b&#249; q&#464;", "meaning": "Sorry", "audio": "audio/duibuqi.mp3" }
 ]
