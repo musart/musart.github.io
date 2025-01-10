@@ -3,17 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>중국어 단어 퀴즈</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chinese Word Quiz</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 100%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .question {
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .option {
+      background-color: #007bff;
+      color: white;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    .option:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <div id="quiz">
-    <h1 id="question"></h1>
-    <button class="option"></button>
-    <button class="option"></button>
-    <button class="option"></button>
-    <button class="option"></button>
+  <div class="container">
+    <div class="question" id="question">Loading...</div>
+    <button class="option">Option 1</button>
+    <button class="option">Option 2</button>
+    <button class="option">Option 3</button>
+    <button class="option">Option 4</button>
   </div>
-
   <script src="script.js"></script>
 </body>
 </html>
