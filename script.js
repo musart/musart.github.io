@@ -16,7 +16,12 @@ function generateQuiz(words) {
     const currentWord = words[Math.floor(Math.random() * words.length)];
     const options = words.map(word => word.meaning);
 
-    questionElement.textContent = `What does "${currentWord.word}" mean?`;
+    // 문제에 단어, 발음(성조), 뜻 표시
+    questionElement.innerHTML = `
+      <strong>Word:</strong> ${currentWord.word}<br>
+      <strong>Pinyin:</strong> ${currentWord.pinyin}<br>
+      <strong>What does it mean?</strong>
+    `;
 
     const shuffledOptions = options.sort(() => Math.random() - 0.5);
     optionButtons.forEach((button, index) => {
