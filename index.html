@@ -14,42 +14,6 @@
     <button class="option"></button>
   </div>
 
-  <script>
-    // JSON 데이터
-    const words = [
-      { word: "你好", pinyin: "nǐ hǎo", meaning: "Hello" },
-      { word: "谢谢", pinyin: "xiè xie", meaning: "Thank you" },
-      { word: "再见", pinyin: "zài jiàn", meaning: "Goodbye" },
-      { word: "对不起", pinyin: "duì bù qǐ", meaning: "Sorry" }
-    ];
-
-    // DOM 요소
-    const questionElement = document.getElementById('question');
-    const optionButtons = document.querySelectorAll('.option');
-
-    // 퀴즈 로직
-    function generateQuiz() {
-      const currentWord = words[Math.floor(Math.random() * words.length)];
-      const options = words.map(word => word.meaning);
-
-      questionElement.textContent = `What does "${currentWord.word}" mean?`;
-      
-      // 옵션 셔플
-      const shuffledOptions = options.sort(() => Math.random() - 0.5);
-      optionButtons.forEach((button, index) => {
-        button.textContent = shuffledOptions[index];
-        button.onclick = () => {
-          if (shuffledOptions[index] === currentWord.meaning) {
-            alert("Correct!");
-          } else {
-            alert("Wrong, try again!");
-          }
-          generateQuiz();
-        };
-      });
-    }
-
-    generateQuiz();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
