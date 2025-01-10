@@ -1,3 +1,13 @@
+async function fetchWords() {
+  try {
+    const response = await fetch('words.json'); // JSON 파일 경로
+    const words = await response.json();
+    generateQuiz(words);
+  } catch (error) {
+    console.error("Failed to load words:", error);
+  }
+}
+
 function playText(text) {
   const synth = window.speechSynthesis;
   const utterance = new SpeechSynthesisUtterance(text);
