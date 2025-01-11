@@ -101,8 +101,8 @@ function generateQuiz(words) {
   const optionButtons = document.querySelectorAll('.option');
 
   function showQuestion() {
-    let currentQuetionIndex = Math.floor(Math.random() * words.length);
-    const currentWord = words[currentQuetionIndex];
+    let currentQuestionIndex = Math.floor(Math.random() * words.length);
+    const currentWord = words[currentQuestionIndex];
     //const options = words.map(word => word.meaning);
 
     // 문제 출력
