@@ -19,7 +19,8 @@ function shuffle(array) {
 
 function generateQuestion() {
   const questionContainer = document.getElementById('question');
-  const optionsContainer = document.getElementById('options');
+  //const optionsContainer = document.getElementById('options');
+  const optionsContainer = document.querySelectorAll('.option');
 
   if (currentQuestionIndex >= data.length) {
     questionContainer.innerHTML = `Quiz completed! Your score: ${score}/${data.length}`;
