@@ -120,7 +120,7 @@ function generateQuiz(words) {
 
     // Generate options
     const options = [currentWord];
-    const otherOptions = data.filter((item, index) => index !== currentQuestionIndex);
+    const otherOptions = words.filter((item, index) => index !== currentQuestionIndex);
     shuffle(otherOptions);
 
     while (options.length < 4) {
