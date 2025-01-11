@@ -2,7 +2,7 @@ let data = [];
 let currentQuestionIndex = 0;
 let score = 0;
 
-fetch('data.json')
+fetch('words.json')
   .then(response => response.json())
   .then(json => {
     data = json;
