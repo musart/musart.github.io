@@ -28,7 +28,17 @@ function generateQuestion() {
   }
 
   const currentWord = data[currentQuestionIndex];
-  questionContainer.innerHTML = `What is the meaning of "${currentWord.word}"?`;
+  questionContainer.innerHTML = `
+      <strong>Word:</strong> ${currentWord.word}<br>
+      <strong>Pinyin:</strong> ${currentWord.pinyin}<br>
+      <strong>What does it mean?</strong>
+      <button id="play-audio">🔊 Listen</button>
+    `;
+
+    // 음성 재생 버튼 이벤트
+    document.getElementById('play-audio').onclick = () => {
+      playText(currentWord.word); // TTS로 단어 발음 재생
+    };
 
   // Generate options
   const options = [currentWord];
