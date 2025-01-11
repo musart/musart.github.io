@@ -124,7 +124,7 @@ function generateQuiz(words) {
 
   showQuestion();
 }
-*/
 
 // JSON 데이터 불러오기
 fetchWords();
+*/
