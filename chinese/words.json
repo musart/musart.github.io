@@ -44,14 +44,14 @@
   { "word": "们", "pinyin": "men", "meaning": "2 people" },
   { "word": "它", "pinyin": "t&#257;", "meaning": "they" },
   { "word": "也", "pinyin": "y&#283;", "meaning": "also" },
-  { "word": "的", "pinyin": "de", "meaning": "～의" },
+  { "word": "的", "pinyin": "de", "meaning": "xx of xx" },
   { "word": "水", "pinyin": "shu&#283;", "meaning": "water" },
   { "word": "汉语", "pinyin": "h&#224;n y&#468;", "meaning": "Chinese" },
   { "word": "汉字", "pinyin": "h&#224;n z&#236;", "meaning": "Chinese character" },
   { "word": "好", "pinyin": "h&#462;o", "meaning": "hello" },
   { "word": "女人", "pinyin": "n&#464; r&#233;n", "meaning": "women" },
   { "word": "女儿", "pinyin": "n&#464; &#233;r", "meaning": "daughter" },
-  { "word": "吗", "pinyin": "ma", "meaning": "의문문 (주로 yes or no)" },
+  { "word": "吗", "pinyin": "ma", "meaning": "question sentence. Mainly yes or no" },
   { "word": "一", "pinyin": "y&#299;", "meaning": "one" },
   { "word": "二", "pinyin": "&#232;r", "meaning": "two" },
   { "word": "三", "pinyin": "s&#257;n", "meaning": "three" },
@@ -63,3 +63,4 @@
   { "word": "九", "pinyin": "ji&#468;", "meaning": "nine" },
   { "word": "十", "pinyin": "sh&#237;", "meaning": "ten" }
 ]
+
