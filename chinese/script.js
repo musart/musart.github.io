@@ -141,9 +141,9 @@ function generateQuiz(words) {
     // 선택지 생성
     const shuffledOptions = options.sort(() => Math.random() - 0.5);
     optionButtons.forEach((button, index) => {
-      button.textContent = shuffledOptions[index];
+      button.textContent = shuffledOptions[index].meaning;
       button.onclick = () => {
-        if (shuffledOptions[index] === currentWord.meaning) {
+        if (shuffledOptions[index].meaning === currentWord.meaning) {
           alert("Correct!");
         } else {
           alert("Wrong, try again!");
