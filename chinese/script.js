@@ -1,3 +1,4 @@
+/*
 let data = [];
 let currentQuestionIndex = 0;
 let score = 0;
@@ -76,8 +77,8 @@ function checkAnswer(isCorrect) {
   currentQuestionIndex++;
   generateQuestion();
 }
+*/
 
-/*
 async function fetchWords() {
   try {
     const response = await fetch('words.json'); // JSON 파일 경로
@@ -87,7 +88,6 @@ async function fetchWords() {
     console.error("Failed to load words:", error);
   }
 }
-*/
 
 function playText(text) {
   const synth = window.speechSynthesis;
@@ -96,14 +96,14 @@ function playText(text) {
   synth.speak(utterance);
 }
 
-/*
 function generateQuiz(words) {
   const questionElement = document.getElementById('question');
   const optionButtons = document.querySelectorAll('.option');
 
   function showQuestion() {
-    const currentWord = words[Math.floor(Math.random() * words.length)];
-    const options = words.map(word => word.meaning);
+    let currentQuetionIndex = Math.floor(Math.random() * words.length);
+    const currentWord = words[currentQuetionIndex];
+    //const options = words.map(word => word.meaning);
 
     // 문제 출력
     questionElement.innerHTML = `
@@ -118,6 +118,19 @@ function generateQuiz(words) {
       playText(currentWord.word); // TTS로 단어 발음 재생
     };
 
+    // Generate options
+    const options = [currentWord];
+    const otherOptions = data.filter((item, index) => index !== currentQuestionIndex);
+    shuffle(otherOptions);
+
+    while (options.length < 4) {
+      const option = otherOptions.pop();
+      if (!options.some(o => o.meaning === option.meaning)) {
+        options.push(option);
+      }
+    }
+    shuffle(options);
+    
     // 선택지 생성
     const shuffledOptions = options.sort(() => Math.random() - 0.5);
     optionButtons.forEach((button, index) => {
@@ -138,4 +151,3 @@ function generateQuiz(words) {
 
 // JSON 데이터 불러오기
 fetchWords();
-*/
